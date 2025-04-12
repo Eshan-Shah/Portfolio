@@ -1,0 +1,10 @@
+.title-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: aliceblue;
+
+}
+
+body {
+    background-color: #333333; /* You can use hex, rgb, or named colors */
+}
