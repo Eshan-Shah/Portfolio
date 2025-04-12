@@ -31,6 +31,11 @@ body {
     text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
 }
 
+.selected-tab {
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+}
+
+
 /* Title Styling */
 .title-font {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,3 +45,5 @@ body {
     text-align: center;
     margin-top: 30px; /* Add space between the tabs and the title */
 }
+
+
