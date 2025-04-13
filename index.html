@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <script src=index.js> </script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="tab-buttons-container">
-        <button class="tab-buttons selected-tab">About</button>
-        <button class="tab-buttons" onclick="toProjects()">Projects</button>
-        <button class="tab-buttons" onclick="toContacts()">Contact Me</button>
-    </div>
+  <div class="tab-buttons-container">
+    <button class="tab-buttons selected-tab" onclick="toAbout()">About</button>
+    <button class="tab-buttons" onclick="toProjects()">Projects</button>
+    <button class="tab-buttons" onclick="toContacts()">Contact Me</button>
+  </div>
 
-    <div>
-        <h1 class="title-font">About me</h1>
+  <div>
+    <h1 class="title-font">About me</h1>
+  </div>
 
-   </div>
-   <div>
-        <ul class="info-list">
-            <li><span class="emoji">📍</span>  <span class="bold-text">Location: </span>  England, UK</li>
-            <li><span class="emoji">🎂</span>  <span class="bold-text">Age: </span>16</li>
-            <li><span class="emoji">💻</span>  <span class="bold-text">Programming Languages: </span>Python, JavaScript, HTML & CSS</li>
-        </ul>       
-    </div>
+  <div>
+    <ul class="info-list">
+      <li><span class="emoji">📍</span> <span class="bold-text">Location:</span> England, UK</li>
+      <li><span class="emoji">🎂</span> <span class="bold-text">Age:</span> 16</li>
+      <li>
+        <span class="emoji">💻</span>
+        <span class="bold-text">Programming Languages:</span> Python, JavaScript, HTML & CSS
+      </li>
+    </ul>
+  </div>
+
+  <!-- Load JS at the end for better performance -->
+  <script src="index.js"></script>
 </body>
-</html> 
+</html>
