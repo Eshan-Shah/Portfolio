@@ -47,3 +47,29 @@ body {
 }
 
 
+
+.info-list {
+    list-style-type: none;
+    padding: 10;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #dddddd;
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.emoji {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.bold-text {
+    font-weight: 1000;
+    margin-right: 5px;
+}
+
