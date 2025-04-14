@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-white scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Speak | Eshan's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen">
+
+  <!-- 🌌 Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-70 backdrop-blur-md sticky top-0 z-50">
+    <h1 class="text-2xl font-bold tracking-tight">Eshan.dev</h1>
+    <ul class="flex space-x-6 text-lg">
+      <li><a href="/" class="hover:text-indigo-400 transition">About</a></li>
+      <li><a href="/experience" class="hover:text-indigo-400 transition">Experience</a></li>
+      <li><a href="/projects" class="hover:text-indigo-400 transition">Projects</a></li>
+      <li><a href="/contact" class="hover:text-indigo-400 transition">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="text-center mt-24 px-6">
+    <h2 class="text-4xl sm:text-6xl font-extrabold mb-6 text-white">
+      <span class="text-indigo-400">SignSpeak</span> 🤟 
+    </h2>
+    <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+      A small, lightweight device that converts sign language to speech in real-time using Python, OpenCV, and MediaPipe.
+    </p>
+  </section>
+
+  <!-- Project Details -->
+  <section class="mt-10 px-6">
+    <div class="max-w-6xl mx-auto bg-gray-900 p-8 rounded-2xl shadow-lg">
+      <h3 class="text-2xl font-semibold mb-4">Project Overview</h3>
+      <p class="text-gray-400 mb-4">
+        Sign Speak is designed to help people communicate in real-time by translating sign language into speech.
+        This technology uses a combination of Python, OpenCV for computer vision, and MediaPipe for hand tracking and gesture recognition.
+      </p>
+
+      <!-- Technologies Used -->
+      <div class="mb-6">
+        <h4 class="text-xl font-semibold mb-3">Technologies Used:</h4>
+        <div class="flex gap-4">
+          <div class="relative group">
+            <img src="https://cdn.simpleicons.org/python/original" alt="Python" class="w-6 h-6" />
+            <div class="absolute bottom-full mb-1 left-1/2 transform -translate-x-1/2 bg-white text-black text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none z-10">
+              Python
+            </div>
+          </div>
+
+          <div class="relative group">
+            <img src="https://cdn.simpleicons.org/opencv/original" alt="OpenCV" class="w-6 h-6" />
+            <div class="absolute bottom-full mb-1 left-1/2 transform -translate-x-1/2 bg-white text-black text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none z-10">
+              OpenCV
+            </div>
+          </div>
+
+          <div class="relative group">
+            <img src="https://cdn.simpleicons.org/mediapipe/original" alt="MediaPipe" class="w-6 h-6" />
+            <div class="absolute bottom-full mb-1 left-1/2 transform -translate-x-1/2 bg-white text-black text-xs rounded-md px-2 py-1 opacity-0 group-hover:opacity-100 transition pointer-events-none z-10">
+              MediaPipe
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Images -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-6">
+        <div>
+          <h4 class="text-lg font-semibold mb-2">Hardware Overview</h4>
+          <img src="/project_images/SignSpeak/hardware.png" alt="Hardware" class="rounded-md mb-4 w-full h-auto" />
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-2">Real-time Demo</h4>
+          <img src="/project_images/SignSpeak/demo.png" alt="Real-time Demo" class="rounded-md mb-4 w-full h-auto" />
+        </div>
+      </div>
+
+      <!-- Additional Info -->
+      <div class="mb-6">
+        <h4 class="text-xl font-semibold mb-3">How It Works</h4>
+        <p class="text-gray-400 mb-4">
+          The Sign Speak device captures hand gestures using a camera and processes them in real-time. Using our own trained neural network the device converts the BSL symbols into text and then into speech to be read out in real-time. The OpenCV library helps in detecting the gestures, while MediaPipe provides the hand tracking features.
+          Python is used for the backend logic, which converts the detected gestures into corresponding speech output. This project allowed me to put into action my theoretical knowledge of Neural Networks and Deep Learning and I really enjoyed seeing it work and actually help people!
+        </p>
+      </div>
+
+      <!-- Links to Code and Demo -->
+      <div class="mb-6">
+        <h4 class="text-xl font-semibold mb-3">Source Code</h4>
+        <a href="https://github.com/Eshan-Shah/SignSpeak" target="_blank" class="inline-flex items-center bg-indigo-600 text-white text-sm px-4 py-2 rounded hover:bg-indigo-700 transition mb-2">
+            <img src="https://cdn.simpleicons.org/github/white" alt="GitHub" class="w-5 h-5 mr-2" />
+            GitHub
+          </a>
+          
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
