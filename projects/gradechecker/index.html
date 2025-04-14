@@ -23,10 +23,10 @@
 
   <section class="text-center mt-24 px-6">
     <h2 class="text-4xl sm:text-6xl font-extrabold mb-6 text-white">
-      <span class="text-indigo-400">SignSpeak</span> 🤟 
+      <span class="text-indigo-400">GradeChecker</span> 📊
     </h2>
     <p class="text-xl text-gray-300 max-w-2xl mx-auto">
-      A small, lightweight device that converts sign language to speech in real-time using Python, OpenCV, and MediaPipe.
+      A simple yet effective application to calculate your grades for you automatically.
     </p>
   </section>
 
@@ -35,8 +35,7 @@
     <div class="max-w-6xl mx-auto bg-gray-900 p-8 rounded-2xl shadow-lg">
       <h3 class="text-2xl font-semibold mb-4">Project Overview</h3>
       <p class="text-gray-400 mb-4">
-        Sign Speak is designed to help people communicate in real-time by translating sign language into speech.
-        This technology uses a combination of Python, OpenCV for computer vision, and MediaPipe for hand tracking and gesture recognition.
+        GradeChecker is a vanilla-developed web application using only JavaScript, HTML and CSS that allows users to input various parameters and recieve their real grades in return 
       </p>
 
       <!-- Technologies Used -->
@@ -48,26 +47,30 @@
             Python
           </li>
           <li class="mb-3 flex items-center gap-2">
-            <img src="https://cdn.simpleicons.org/opencv/original" alt="OpenCV" class="w-6 h-6" />
-            OpenCV
+            <img src="https://cdn.simpleicons.org/javascript/original" alt="JavaScript" class="w-6 h-6" />
+            JavaScript
+          </li>
+          <li class="mb-3 flex items-center gap-2">
+            <img src="https://cdn.simpleicons.org/html5/original" alt="HTML" class="w-6 h-6" />
+            HTML5
           </li>
           <li class="flex items-center gap-2">
-            <img src="https://cdn.simpleicons.org/mediapipe/original" alt="MediaPipe" class="w-6 h-6" />
-            MediaPipe
+            <img src="https://cdn.simpleicons.org/css3/original" alt="CSS" class="w-6 h-6" />
+            CSS3
           </li>
         </ul>
       </div>
-          
+
       <!-- Project Images -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-6">
         <div>
-          <h4 class="text-lg font-semibold mb-2">Hardware Overview</h4>
-          <img src="/project_images/SignSpeak/hardware.png" alt="Hardware" class="rounded-md mb-4 w-full h-auto" />
+          <h4 class="text-lg font-semibold mb-2">User Inputs</h4>
+          <img src="/project_images/GradeChecker/parampage.png" alt="Hardware" class="rounded-md mb-4 w-full h-auto" />
         </div>
 
         <div>
-          <h4 class="text-lg font-semibold mb-2">Real-time Demo</h4>
-          <img src="/project_images/SignSpeak/demo.png" alt="Real-time Demo" class="rounded-md mb-4 w-full h-auto" />
+          <h4 class="text-lg font-semibold mb-2">Outputs</h4>
+          <img src="/project_images/GradeChecker/outputpage.png" alt="Real-time Demo" class="rounded-md mb-4 w-full h-auto" />
         </div>
       </div>
 
@@ -75,15 +78,14 @@
       <div class="mb-6">
         <h4 class="text-xl font-semibold mb-3">How It Works</h4>
         <p class="text-gray-400 mb-4">
-          The Sign Speak device captures hand gestures using a camera and processes them in real-time. Using our own trained neural network the device converts the BSL symbols into text and then into speech to be read out in real-time. The OpenCV library helps in detecting the gestures, while MediaPipe provides the hand tracking features.
-          Python is used for the backend logic, which converts the detected gestures into corresponding speech output. This project allowed me to put into action my theoretical knowledge of Neural Networks and Deep Learning and I really enjoyed seeing it work and actually help people!
+          The app takes in the users Exam Level, Exam Board and Marks then converts it into a percentage. Using the data found from the online grade boundaries, it creates a table calculating the percentage for each grade. It then compares the percentage achieved by the user with the table and returns all relevant information to the user so they can see what they achieved and how close they were to surrounding grades.
         </p>
       </div>
 
       <!-- Links to Code and Demo -->
       <div class="mb-6">
         <h4 class="text-xl font-semibold mb-3">Source Code</h4>
-        <a href="https://github.com/Eshan-Shah/SignSpeak" target="_blank" class="inline-flex items-center bg-indigo-600 text-white text-sm px-4 py-2 rounded hover:bg-indigo-700 transition mb-2">
+        <a href="https://github.com/Eshan-Shah/GradeChecker" target="_blank" class="inline-flex items-center bg-indigo-600 text-white text-sm px-4 py-2 rounded hover:bg-indigo-700 transition mb-2">
             <img src="https://cdn.simpleicons.org/github/white" alt="GitHub" class="w-5 h-5 mr-2" />
             GitHub
           </a>
