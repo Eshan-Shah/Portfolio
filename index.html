@@ -11,16 +11,28 @@
 <body class="font-sans bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen">
       
   
-  <!-- 🌌 Navbar -->
-  <nav class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-70 backdrop-blur-md sticky top-0 z-50">
-    <h1 class="text-2xl font-bold tracking-tight">Eshan.dev</h1>
-    <ul class="flex space-x-6 text-lg">
-      <li><a class="text-indigo-400 transition">About</a></li>
-      <li><a href="/experience" class="hover:text-indigo-400 transition">Experience</a></li>
-      <li><a href="/projects" class="hover:text-indigo-400 transition">Projects</a></li>
-      <li><a href="/contact" class="hover:text-indigo-400 transition">Contact</a></li>
-    </ul>
-  </nav>
+<!-- 🌌 Navbar -->
+<nav class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-70 backdrop-blur-md sticky top-0 z-50">
+  <!-- 🌐 Left Side: Social Icons -->
+  <div class="flex space-x-4">
+    <a href="https://github.com/Eshan-Shah" target="_blank" class="hover:opacity-60 hover:scale-150 transition duration-300">
+      <img src="https://cdn.simpleicons.org/github/white" alt="GitHub" class="w-8 h-8" />
+    </a>
+    <a href="https://www.linkedin.com/in/eshanshah-/" target="_blank" class="hover:opacity-60 hover:scale-150 transition duration-300">
+      <img src="/icons/linkedin1.svg" alt="LinkedIn" class="w-8 h-8" />
+    </a>
+  </div>
+
+  <!-- 📁 Right Side: Nav Links -->
+  <ul class="flex space-x-6 text-lg">
+    <li><a class="text-indigo-400 transition">About</a></li>
+    <li><a href="/experience" class="hover:text-indigo-400 transition">Experience</a></li>
+    <li><a href="/projects" class="hover:text-indigo-400 transition">Projects</a></li>
+    <li><a href="/contact" class="hover:text-indigo-400 transition">Contact</a></li>
+  </ul>
+</nav>
+
+  
 
   <!-- 👋 Intro Section -->
   <section class="text-center mt-24" id="about">
@@ -33,7 +45,7 @@
       United Kingdom
     </p>
     <p class="text-xl text-gray-300 mt-4 px-4 max-w-2xl mx-auto">
-      I'm a 16 year-old aspiring software engineer with an interest in deep learning and AI looking to study Maths with Computer Science. I love building intelligent systems to solve real-world problems.
+        I'm a 16-year-old aspiring software engineer with a passion for deep learning, AI, and building web apps. I aim to study Maths with Computer Science and enjoy creating intelligent systems to solve real problems.
     </p>
     <a href="/CV.pdf" 
         target="_blank"
@@ -64,7 +76,11 @@
         <img src="https://cdn.simpleicons.org/tailwindcss/white" alt="Tailwind" class="w-12 h-12 group-hover:scale-150 transition-transform duration-300" />
         <span class="mt-2 text-sm">Tailwind</span>
       </div>
-      <!-- <Add more icons here as needed> -->
+      <div class="flex flex-col items-center group">
+        <img src="https://cdn.simpleicons.org/git/white" alt="Git" class="w-12 h-12 group-hover:scale-150 group-hover:opacity-60 transition duration-300" />
+        <span class="mt-2 text-sm">Git</span>
+      </div>
+      
     </div>
   </section>
 
