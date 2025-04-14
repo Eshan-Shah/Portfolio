@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script>
+        function toggleCard(card) {
+            card.classList.toggle('expanded');
+        }
+        function toAbout() {
+            window.location.href = "/about.html";
+        }
+        function toContacts() {
+            window.location.href = "/contact.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="tab-buttons-container">
+        <button class="tab-buttons" onclick="toAbout()">About</button>
+        <button class="tab-buttons selected-tab">Projects</button>
+        <button class="tab-buttons" onclick="toContacts()">Contact Me</button>
+    </div>
+
+    <div>
+        <h1 class="title-font">Projects</h1>
+    </div>
+
+    <div class="project-card" onclick="toggleCard(this)">
+        <div class="project-preview">
+            <h2 class="subheading-text">🧠 SignSpeak</h2>
+            <p class="subsub-text">A lightweight device that converts sign language into text & speech.</p>
+            <img src="/assets/project_images/SignSpeak/demo.png" class="project-img" alt="Demo Image" />
+        </div>
+
+        <div class="project-details">
+            <p class="subsub-text"><span>💡</span><span class="subsub-text-bold"> Overview:</span> A locally run, small-lightweight device that converts sign language into text and speech in real-time using recognition and trained data.</p>
+
+            <p class="subsub-text"><span>🛠</span><span class="subsub-text-bold"> Technologies:</span></p>
+            <ul class="subsub-text" style="margin-left: 24px;">
+                <li><strong>Software:</strong>
+                    <ul>
+                        <li>Python</li>
+                        <li>OpenCV</li>
+                        <li>MediaPipe</li>
+                    </ul>
+                </li>
+                <li><strong>Hardware:</strong>
+                    <ul>
+                        <li>Raspberry Pi</li>
+                        <li>Webcam</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p class="subsub-text"><span>✨</span><span class="subsub-text-bold"> Features:</span> Can recognise different signs from BSL in real-time as you move your hands and then convert it into text and speech for the user to see or hear allowing for translations.</p>
+
+            <p class="subsub-text"><span>⚙️</span><span class="subsub-text-bold"> How It Works:</span> Using my own trained neural network it matches the video frame it sees to images it has been trained on to predict the word being signed.</p>
+
+            <p class="subsub-text"><span>🎥</span><span class="subsub-text-bold"> Demo:</span></p>
+            <img src="/assets/project_images/SignSpeak/hardware.png" alt="Hardware" class="project-img" />
+            <img src="/assets/project_images/SignSpeak/demo.png" alt="Demo" class="project-img" />
+
+            <p class="subsub-text"><span>🧠</span><span class="subsub-text-bold"> Challenges & Improvements:</span> The hardest part was implementing the neural network in real-time using hand-tracking as this required extensive knowledge and mathematics as well as many failed attempts for it to work. To further improve this project I could next time train it on individual letters as well as training it more extensively to increase accuracy.</p>
+
+            <p class="subsub-text"><span>🏅</span><span class="subsub-text-bold"> Recognition:</span> -</p>
+
+            <p class="subsub-text"><span>📆</span><span class="subsub-text-bold"> Timeline:</span> 12th February 2025 - 26th March 2025</p>
+
+            <p class="subsub-text"><span>📂</span><span class="subsub-text-bold"> Source Code:</span> -</p>
+        </div>
+    </div>
+</body>
+</html>

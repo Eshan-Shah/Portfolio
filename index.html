@@ -1,34 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-black text-white scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Eshan's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="tab-buttons-container">
-    <button class="tab-buttons selected-tab" onclick="toAbout()">About</button>
-    <button class="tab-buttons" onclick="toProjects()">Projects</button>
-    <button class="tab-buttons" onclick="toContacts()">Contact Me</button>
-  </div>
-
-  <div>
-    <h1 class="title-font">About me</h1>
-  </div>
-
-  <div>
-    <ul class="info-list">
-      <li><span class="emoji">📍</span> <span class="bold-text">Location:</span> England, UK</li>
-      <li><span class="emoji">🎂</span> <span class="bold-text">Age:</span> 16</li>
-      <li>
-        <span class="emoji">💻</span>
-        <span class="bold-text">Programming Languages:</span> Python, JavaScript, HTML & CSS
-      </li>
+<body class="font-sans bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen">
+  
+  <!-- 🌌 Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-70 backdrop-blur-md sticky top-0 z-50">
+    <h1 class="text-2xl font-bold tracking-tight">Eshan.dev</h1>
+    <ul class="flex space-x-6 text-lg">
+      <li><a href="#about" class="hover:text-indigo-400 transition">About</a></li>
+      <li><a href="#experience" class="hover:text-indigo-400 transition">Experience</a></li>
+      <li><a href="#projects" class="hover:text-indigo-400 transition">Projects</a></li>
+      <li><a href="#contact" class="hover:text-indigo-400 transition">Contact</a></li>
     </ul>
-  </div>
+  </nav>
 
-  <!-- Load JS at the end for better performance -->
-  <script src="index.js"></script>
+  <!-- 👋 Intro Section -->
+  <section class="text-center mt-24" id="about">
+    <h2 class="text-4xl sm:text-6xl font-extrabold mb-4 text-white drop-shadow-glow">
+      Hi, my name is <span class="text-indigo-400">Eshan</span> 
+      <span class="inline-block hover:animate-wave">👋</span>
+    </h2>
+    <p class="text-gray-400 text-lg flex justify-center items-center gap-2">
+      <svg class="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path d="M5.05 3.05a7 7 0 019.9 0l.95.95a7 7 0 010 9.9l-4.24 4.24a2 2 0 01-2.83 0L5.05 13.9a7 7 0 010-9.9l.95-.95z"/></svg>
+      United Kingdom
+    </p>
+    <p class="text-xl text-gray-300 mt-4 px-4 max-w-2xl mx-auto">
+      <!-- <infill a short intro line or two about you here> -->
+    </p>
+  </section>
+
+  <!-- 🚀 Skills Section -->
+  <section class="mt-20 px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Technologies & Tools</h3>
+    <div class="flex flex-wrap justify-center gap-8">
+      <!-- Skill Example (replace the src with your skill icon URLs or SVGs) -->
+      <div class="flex flex-col items-center group">
+        <img src="https://cdn.simpleicons.org/python/white" alt="Python" class="w-12 h-12 group-hover:scale-150 transition-transform duration-300" />
+        <span class="mt-2 text-sm">Python</span>
+      </div>
+      <div class="flex flex-col items-center group">
+        <img src="https://cdn.simpleicons.org/javascript/white" alt="JavaScript" class="w-12 h-12 group-hover:scale-150 transition-transform duration-300" />
+        <span class="mt-2 text-sm">JavaScript</span>
+      </div>
+      <div class="flex flex-col items-center group">
+        <img src="https://cdn.simpleicons.org/html5/white" alt="HTML" class="w-12 h-12 group-hover:scale-150 transition-transform duration-300" />
+        <span class="mt-2 text-sm">HTML</span>
+      </div>
+      <div class="flex flex-col items-center group">
+        <img src="https://cdn.simpleicons.org/tailwindcss/white" alt="Tailwind" class="w-12 h-12 group-hover:scale-150 transition-transform duration-300" />
+        <span class="mt-2 text-sm">Tailwind</span>
+      </div>
+      <!-- <Add more icons here as needed> -->
+    </div>
+  </section>
+
+  <style>
+    .drop-shadow-glow {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #6366f1;
+    }
+
+    @keyframes wave {
+      0% { transform: rotate(0deg); }
+      20% { transform: rotate(20deg); }
+      40% { transform: rotate(-10deg); }
+      60% { transform: rotate(20deg); }
+      80% { transform: rotate(-10deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .animate-wave {
+      display: inline-block;
+      animation: wave 1s infinite ease-in-out;
+      transform-origin: 70% 70%;
+    }
+
+    .hover\\:animate-none:hover {
+      animation: none !important;
+    }
+  </style>
+
 </body>
 </html>
