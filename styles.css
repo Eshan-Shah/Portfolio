@@ -1,0 +1,48 @@
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 9999px;
+    box-shadow: 0 0 6px white;
+    opacity: 0.5;
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); }
+}
+
+@keyframes starfield {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+.animate-starfield {
+    animation: starfield 10s infinite alternate ease-in-out;
+}
+
+.drop-shadow-glow {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #6366f1;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(20deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(20deg); }
+    80% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.animate-wave {
+    display: inline-block;
+    animation: wave 1s infinite ease-in-out;
+    transform-origin: 70% 70%;
+}
+
+.hover\\:animate-none:hover {
+    animation: none !important;
+}

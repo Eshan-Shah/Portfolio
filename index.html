@@ -4,33 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eshan's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen">
+      
   
   <!-- 🌌 Navbar -->
   <nav class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-70 backdrop-blur-md sticky top-0 z-50">
     <h1 class="text-2xl font-bold tracking-tight">Eshan.dev</h1>
     <ul class="flex space-x-6 text-lg">
-      <li><a href="#about" class="hover:text-indigo-400 transition">About</a></li>
-      <li><a href="#experience" class="hover:text-indigo-400 transition">Experience</a></li>
-      <li><a href="#projects" class="hover:text-indigo-400 transition">Projects</a></li>
-      <li><a href="#contact" class="hover:text-indigo-400 transition">Contact</a></li>
+      <li><a href="/" class="hover:text-indigo-400 transition">About</a></li>
+      <li><a href="/experience" class="hover:text-indigo-400 transition">Experience</a></li>
+      <li><a href="/projects" class="hover:text-indigo-400 transition">Projects</a></li>
+      <li><a href="/contact" class="hover:text-indigo-400 transition">Contact</a></li>
     </ul>
   </nav>
 
   <!-- 👋 Intro Section -->
   <section class="text-center mt-24" id="about">
-    <h2 class="text-4xl sm:text-6xl font-extrabold mb-4 text-white drop-shadow-glow">
+    <h2 class="text-4xl sm:text-6xl font-extrabold mb-6 text-white">
       Hi, my name is <span class="text-indigo-400">Eshan</span> 
       <span class="inline-block hover:animate-wave">👋</span>
     </h2>
-    <p class="text-gray-400 text-lg flex justify-center items-center gap-2">
-      <svg class="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path d="M5.05 3.05a7 7 0 019.9 0l.95.95a7 7 0 010 9.9l-4.24 4.24a2 2 0 01-2.83 0L5.05 13.9a7 7 0 010-9.9l.95-.95z"/></svg>
+    <p class="text-gray-400 text-lg flex justify-center items-center gap-2 mb-6">
+      <img src="https://cdn.simpleicons.org/pinboard/white" alt="Pin" class="w-5 h-5" />
       United Kingdom
     </p>
     <p class="text-xl text-gray-300 mt-4 px-4 max-w-2xl mx-auto">
-      <!-- <infill a short intro line or two about you here> -->
+      I'm a 16 year-old aspiring software engineer with an interest in deep learning and AI looking to study Maths with Computer Science.
     </p>
   </section>
 
@@ -59,30 +62,7 @@
     </div>
   </section>
 
-  <style>
-    .drop-shadow-glow {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #6366f1;
-    }
-
-    @keyframes wave {
-      0% { transform: rotate(0deg); }
-      20% { transform: rotate(20deg); }
-      40% { transform: rotate(-10deg); }
-      60% { transform: rotate(20deg); }
-      80% { transform: rotate(-10deg); }
-      100% { transform: rotate(0deg); }
-    }
-
-    .animate-wave {
-      display: inline-block;
-      animation: wave 1s infinite ease-in-out;
-      transform-origin: 70% 70%;
-    }
-
-    .hover\\:animate-none:hover {
-      animation: none !important;
-    }
-  </style>
 
 </body>
+
 </html>
