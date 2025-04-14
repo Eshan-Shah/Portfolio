@@ -18,3 +18,4 @@ function getRandomInt(a, b) {
   document.addEventListener('DOMContentLoaded', () => {
     createStarField();
   });
+
