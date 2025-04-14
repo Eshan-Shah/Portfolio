@@ -46,3 +46,25 @@
 .hover\\:animate-none:hover {
     animation: none !important;
 }
+
+
+/* Add to your styles.css */
+.icon {
+    transition: all 0.5s ease; /* Smooth transitions for all changes */
+  }
+
+  
+  .icon.active {
+    transform: scale(1.5); /* Increase the size */
+    opacity: 1; /* Ensure opacity is restored when active */
+  }
+  
+
+  .icon-wrapper {
+    transition: transform 0.5s ease;
+  }
+  
+  .icon-wrapper.active {
+    transform: scale(1.5);
+  }
+  

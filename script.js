@@ -19,3 +19,27 @@ function getRandomInt(a, b) {
     createStarField();
   });
 
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const wrappers = document.querySelectorAll('.icon-wrapper');
+    let current = 0;
+  
+    function cycleIcons() {
+      wrappers.forEach(wrapper => {
+        wrapper.classList.remove("active");
+        const img = wrapper.querySelector("img");
+        img.src = img.src.replace("/original", "/white");
+      });
+  
+      const currentWrapper = wrappers[current];
+      currentWrapper.classList.add("active");
+      const currentImg = currentWrapper.querySelector("img");
+      currentImg.src = currentImg.src.replace("/white", "/original");
+  
+      current = (current + 1) % wrappers.length;
+    }
+  
+    setInterval(cycleIcons, 900);
+  });
+  
