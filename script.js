@@ -22,23 +22,25 @@ function getRandomInt(a, b) {
 
 
   document.addEventListener("DOMContentLoaded", () => {
-    const wrappers = document.querySelectorAll('.icon-wrapper');
-    let current = 0;
+    const wrappers = document.querySelectorAll(".icon-wrapper");
+    const interval = 2000;
+    const delay = 100;
   
-    function cycleIcons() {
-      wrappers.forEach(wrapper => {
-        wrapper.classList.remove("active");
-        const img = wrapper.querySelector("img");
-        img.src = img.src.replace("/original", "/white");
+    function rippleCycle() {
+      wrappers.forEach((wrapper, i) => {
+        setTimeout(() => {
+          wrapper.classList.add("active");
+          const img = wrapper.querySelector("img");
+          img.src = img.src.replace("/white", "/original");
+  
+          setTimeout(() => {
+            wrapper.classList.remove("active");
+            img.src = img.src.replace("/original", "/white");
+          }, delay * wrappers.length); // fade out after full ripple
+        }, i * delay); // stagger the ripple
       });
-  
-      const currentWrapper = wrappers[current];
-      currentWrapper.classList.add("active");
-      const currentImg = currentWrapper.querySelector("img");
-      currentImg.src = currentImg.src.replace("/white", "/original");
-  
-      current = (current + 1) % wrappers.length;
     }
   
-    setInterval(cycleIcons, 900);
+    setInterval(rippleCycle, interval);
   });
+  
