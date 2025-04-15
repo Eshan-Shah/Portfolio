@@ -68,3 +68,18 @@
     transform: scale(1.5);
   }
   
+
+  /* Glowing outline with a moving dot effect */
+.card {
+    position: relative;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+/* Custom outline glow with opacity */
+.hover\:outline-glow:hover {
+    outline: 4px solid rgba(255, 255, 255, 0.579); /* White outline with 10% opacity */
+}
