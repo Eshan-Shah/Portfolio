@@ -22,23 +22,37 @@ function getRandomInt(a, b) {
 
 
   document.addEventListener("DOMContentLoaded", () => {
-    const wrappers = document.querySelectorAll(".icon-wrapper");
-    const interval = 2000;
+    const awards = document.querySelectorAll(".award-wrapper");
+    const techs = document.querySelectorAll(".tech-wrapper");
     const delay = 100;
+    const interval = 1000;
+    let isAwardTurn = true;
   
-    function rippleCycle() {
-      wrappers.forEach((wrapper, i) => {
+    function ripple(group) {
+      group.forEach((el, i) => {
         setTimeout(() => {
-          wrapper.classList.add("active");
-          const img = wrapper.querySelector("img");
-          img.src = img.src.replace("/white", "/original");
+          el.classList.add("active");
+  
+          // Only attempt image manipulation if an <img> exists
+          const img = el.querySelector("img");
+          if (img && img.src.includes("/white")) {
+            img.src = img.src.replace("/white", "/original");
+          }
   
           setTimeout(() => {
-            wrapper.classList.remove("active");
-            img.src = img.src.replace("/original", "/white");
-          }, delay * wrappers.length); // fade out after full ripple
-        }, i * delay); // stagger the ripple
+            el.classList.remove("active");
+  
+            if (img && img.src.includes("/original")) {
+              img.src = img.src.replace("/original", "/white");
+            }
+          }, delay * group.length);
+        }, i * delay);
       });
+    }
+  
+    function rippleCycle() {
+      ripple(isAwardTurn ? awards : techs);
+      isAwardTurn = !isAwardTurn;
     }
   
     setInterval(rippleCycle, interval);
