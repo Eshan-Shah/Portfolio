@@ -42,4 +42,3 @@ function getRandomInt(a, b) {
   
     setInterval(cycleIcons, 900);
   });
-  
